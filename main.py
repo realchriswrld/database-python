@@ -16,3 +16,18 @@ class User(Model):
         database = db
 User.create_table(fail_silently= True)
 
+
+
+#create student table
+
+class Student(Model):
+    name = CharField()
+    age = CharField()
+    verfication = CharField()
+    stream = CharField()
+    gender = CharField()
+
+
+    class Meta:
+        database = db
+Student.create_table(fail_silently=True)
